@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        </style>
+
+
+    <!--оболочка страницы-->
+    <div class="wrapper">
+<!--контенет-->
+    <header class="header">
+  <div class='container'>
+    <div class="header__body">
+    <a href="#" class="header__logo">
+ <img src="img/kisspng-python-general-purpose-programming-language-comput-python-programming-language-symphony-solution-5b6ee0c89ecd95.2067324515339931606505.png" alt="">   
+ </a>
+  <div class="header__burger" id="Top">
+ <span></span>
+ </div>  
+      <nav class="header__bmenu">
+ <ul class="header__list">
+<li>
+    <a href="#Top" class="header__link">Accueil</a>
+
+</li>
+<li>
+    <a href="#about-section" class="header__link">A propos</a>
+
+</li>
+<li>
+    <a href="" class="header__link">Portofolio</a>
+
+</li>
+<li>
+    <a href="#contact_form" class="header__link">Contact</a>
+
+</li>
+
+
+</ul>
+</nav>  
+    </div>
+</div>
+</header>
+
+
+<main>
+<div class="content" id="content">
+<div class="containerTXT">
+<div class="content__text" >
+    
+    <h1>Bonjour je m'applle  <span class="txt">Vadim Spac</span> </h1>
+    <pclass="profile">Projet Professionnel: <br>Développeur d'application contrat de professionnalisation.<br>
+         3 semaines en entreprise/1 semaines en centre 12 mois,du 3 octobre 2022 au septembre 2023</p>
+         
+    <!--bouton-->
+         <a class="CV" target="_blank" href="img/Cv.Lettre de motivation.Lettre d'accompagnement.pdf">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            MON CV
+        </a>
+
+
+     </div> 
+    </div>
+  </div>
+    </div>
+    
+    <div class="images">
+        <img src="img/shape.png" class="shape">
+        <img src="img/96fe12e3-ac71-4c2f-9237-26b4a6ca4f7b-removebg-preview.png" class="moi">
+    </div>
+
+    <!--about me section-->
+<section class="about">
+    <h2 class="heading" id="about-section">à pro<span class="txt">pos</span></h2>
+    <h1 class="sub-heading"> Passionné par la tech et le web, j'ai démarré une reconversion dans le domaine du développement web en 2021.Pour permettre à mon projet d'aboutir, je recherche un poste d'alternant pour la formation développeur concepteur d'applications chez Simplon à la rentrée. Je suivrai cet été un bootcamp de 3 mois chez Simplon pour préparer l'entrée en alternance pour etre autonome. </h1>
+    </section>
+    
+    <div>
+        <img src="img/shape.png" class="shape2">
+        <img src="img/imgg-removebg-preview.png" class="aboutimg">
+    </div>
+    
+</main>
+
+ <!--Contact-->
+<h1> Contactez <span class="txt">moi</span></h1>
+  <div class="underline">
+  </div>
+  <form action="#" method="post" id="contact_form">
+    <div class="name">
+      <label for="name"></label>
+      <input type="text" placeholder="Mon nom et Prenom" name="name" id="name_input" required>
+    </div>
+    <div class="email">
+      <label for="email"></label>
+      <input type="email" placeholder="Mon mail" name="email" id="email_input" required>
+    </div>
+    <div class="telephone">
+      <label for="name"></label>
+      <input type="text" placeholder="Mon numero" name="telephone" id="telephone_input" required>
+    </div>
+    <div class="subject">
+      <label for="subject"></label>
+      <select placeholder="Subject line" name="subject" id="subject_input" required>
+        <option disabled hidden selected>Suject </option>
+        <option>je souhaiterais prendre rendez-vous </option>
+        <option>je souhaiterais vous contacter </option>
+      </select>
+    </div>
+    <div class="message">
+      <label for="message"></label>
+      <textarea name="message" placeholder="votre message" id="message_input" cols="30" rows="5" required></textarea>
+    </div>
+    <div class="submit">
+      <input type="submit" value="envoyer message" id="form_button" />
+    </div>
+  </form><!-- // End form -->
+</div><!-- // End #container -->
+
+
+
+
+
+    
+<!--FOOTER-->
+     <div class="footer">
+        <div id="button"></div>
+      <div id="container">
+      <div id="cont">
+      <div class="footer_center">
+        <h3>Copyright &copy; 2022, All Right Reserved <span>VadimSpac</span></h3>
+             <div class="social">
+                <a href="https://fr.linkedin.com/in/vadim-spac-973656225?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram" target="_blank"></i></a>
+                <a href="#"><i class="fab fa-behance" target="_blank" ></i></a>
+             </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+     <script
+     src="https://code.jquery.com/jquery-3.6.0.js"
+     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+     crossorigin="anonymous"></script>
+
+     <script
+src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="Elephant.php"></script>
+    
+    
+
+   
+</body>
+</html>
