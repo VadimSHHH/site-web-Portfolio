@@ -6,8 +6,6 @@ border: 0;
 box-sizing: border-box;
 }
 html,body{
-   height: 100%;
-   width: 100%;
 background-color: black;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -15,9 +13,59 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 /*tout le class*/
 .container{
-max-width: 1180px !important;
+max-width: 1200px;
 margin: 0px auto;
 padding: 0px 10px;
+}
+
+@media (max-width:1200px) {
+    .container{
+        max-width:970px;
+    }
+}
+@media (max-width:992px) {
+    .container{
+        max-width:750px;
+    }
+}
+@media (max-width:767px) {
+    .container{
+        max-width:no;
+    }
+}
+
+@media (max-width:1200px) {
+    .content{
+        max-width:1000px;
+        
+    }
+}
+@media (max-width:992px) {
+    .content{
+        max-width:750px;
+    }
+}
+@media (max-width:767px) {
+    .content{
+        max-width:none;
+    }
+}
+
+@media (max-width:1200px) {
+    .images img{
+        max-width:1000px;
+        
+    }
+}
+@media (max-width:992px) {
+    .images img{
+        max-width:750px;
+    }
+}
+@media (max-width:767px) {
+    .images img{
+        max-width:none;
+    }
 }
 .header {
    position: fixed;
@@ -82,7 +130,7 @@ width: 80px;
     font-size: 19px;
 
 }
-/*media*/
+
 @media (max-width:767px) {
 .header__body {
 height: 50px;
@@ -173,32 +221,25 @@ height: 100%;
 }
 
 .content {
+    
     padding: 100px 0px 0px 0px;
-    margin-left: -40em;
     margin-top: 15%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.content__text {
     color: #bdbdbd;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300px;
-    font-size: 15px;
-
-
-}
-
-.containerTXT {
-    max-width: max-content;
+    font-size: 17px;
     margin: 0px auto;
     padding: 0px 10px;
-    }
-
-.content__text h1{
+    font-family: 'Roboto', sans-serif;  
+}
+.content h1{
     font-size: 3em;
     color: #bdbdbd;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+    margin-top: 6em;
     font-family: 'Roboto', sans-serif;
+    
 }
+
 .social{
     margin-top: auto;
     margin-left: 7em;
@@ -215,40 +256,6 @@ height: 100%;
 transition-duration: 2s;
 color: orangered;
 }   
-
-@media (max-width:765px){
-.content{
-    padding: 100px 0px 0px 0px;
-    margin-left: 3%;
-    margin-top: 10%;
-}
-.content__text h1{
-    font-size: 35px;
-}
-.content__text{
-    font-size: 15px;
-}
-
-}
-
-@media (max-width:1000px){
-    .content{
-        padding: 100px 0px 0px 0px;
-        margin-left: 3%;
-        margin-top: 10%;
-    }
-    .content__text h1{
-        font-size: 35px;
-    }
-    .content__text{
-        font-size: 15px;
-    }
-    
-    }
-    
-
-
-
 
 span.txt{
     background: -webkit-linear-gradient(#f5c04c, #ffc811,#e39b00,#ff6911);-webkit-background-clip: text;
@@ -362,11 +369,11 @@ span.txt{
 
 
 .images{
-    width: 30%;
-    height: 90%;
+    max-width: 20%;
+    max-height: 90%;
     position: absolute;
     bottom: 0;
-    right: 0px;
+    right: 30em;
 }
 
 .images img{
@@ -379,126 +386,6 @@ span.txt{
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 100%;
 }
-@media (max-width:1700px){
-.images{
-    width: 30%;
-    height: 56%;
-    position: absolute;
-    bottom: 0;
-    right: 69px;
-
-}
-}
-@media (max-width:1500px){
-    .images{
-        width: 30%;
-        height: 50%;
-        position: absolute;
-        bottom: 0;
-        right: 69px;
-    
-    }
-    }
-
-    @media (max-width:1350px){
-        .images{
-            width: 30%;
-            height: 45%;
-            position: absolute;
-            bottom: 0;
-            right: 69px;
-
-        
-        }
-        }
-    
-@media (max-width:1200px){
-        .images{
-            width: 30%;
-            height: 40%;
-            position: absolute;
-            bottom: 0;
-            right: 69px;
-            
-        
-        }
-        }
-
-        @media (max-width:1000px){
-            .images{
-                width: 40%;
-                height: 50%;
-                position: absolute;
-                bottom: 0;
-                right: 69px;
-                
-            
-            }
-            }
-
-            @media (max-width:900px){
-                .images{
-                    width: 70%;
-                    height: 40%;
-                    position: absolute;
-                    bottom: 0;
-                    right: -230px;
-                    
-                
-                }
-                }
-                @media (max-width:800px){
-                    .images{
-                        width: 60%;
-                        height: 40%;
-                        position: absolute;
-                        bottom: 0;
-                        right: -120px; 
-                    }
-                    }
-                    
-                    @media (max-width:700px){
-                        .images{
-                            width: 60%;
-                            height: 40%;
-                            position: absolute;
-                            bottom: 0;
-                            right: -50px; 
-                        }
-                        }
-                        
-                        @media (max-width:600px){
-                            .images{
-                                width: 30%;
-                                height: 21%;
-                                position: absolute;
-                                bottom: 0;
-                                right: 68px; 
-                            }
-                            }
-                            @media (max-width:500px){
-                                .images{
-                                    width: 30%;
-                                    height: 20%;
-                                    position: absolute;
-                                    bottom: 0;
-                                    right: 68px; 
-                                }
-                                }
-                                
-         
-
-.images:hover .shape{
-    bottom: 50px;
-}
-
-.images:hover .moi{
-    left: -20%;
-    
-}
-
-
-
 .about{
     width: 100%;
     padding: 600px 18px;
